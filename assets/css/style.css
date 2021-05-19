@@ -1,0 +1,453 @@
+/* RESETEO */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* GENERAL --------------------------------------------------------------------------------------------------------------------------------------*/
+
+@font-face {
+    font-family: "Optimus Princeps";
+    src: url("../fonts/OptimusPrinceps.ttf");
+}
+
+html,
+body {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 160%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    font-family: "Optimus Princeps";
+    font-size: 4rem;
+    color: #FFF;
+    margin-bottom: 30px;
+    line-height: 120%;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-family: "Optimus Princeps";
+    font-size: 2rem;
+    color: #FFF;
+    line-height: 120%;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    margin-bottom: 30px;
+}
+
+a:hover,
+a#seleccionado {
+    text-shadow: -2px -2px 3px rgb(150, 90, 57), 2px -2px 3px rgb(150, 90, 57), -2px 2px 3px rgb(150, 90, 57), 2px 2px 3px rgb(150, 90, 57);
+    text-decoration: underline;
+}
+
+/* HEADER --------------------------------------------------------------------------------------------------------------------------------------*/
+
+header#menu {
+    width: 100%;
+    position: fixed;
+    min-height: 10vh;
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+header#menu nav {
+    font-size: 1.5rem;
+    margin: 0px 20px;
+}
+
+header#menu>ul {
+    font-size: 2rem;
+    margin: 0px 20px;
+}
+
+header#menu ul li {
+    display: inline-block;
+    margin: 10px 20px;
+    font-family: "Optimus Princeps";
+}
+
+/* MAIN Y SECCION--------------------------------------------------------------------------------------------------------------------------------------*/
+
+main#main {
+    padding-top: 10vh;
+    width: 100%;
+    background: url("https://orig00.deviantart.net/dab7/f/2016/109/3/b/dark_souls_3___firelink_by_zedotagger-d9yaglh.gif") no-repeat center center/cover;
+    background-attachment: fixed;
+}
+
+main#main>section {
+    padding: 50px;
+    width: 80%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #FFF;
+    text-align: center;
+}
+
+/* INTRO --------------------------------------------------------------------------------------------------------------------------------------*/
+
+main#main section#intro {
+    text-align: justify;
+}
+
+main#main section#intro img {
+    width: 500px;
+    margin: auto;
+}
+
+main#main section#intro div#texto img {
+    width: 350px;
+    float: right;
+    padding: 0px 0px 20px 30px;
+}
+
+/* JUEGOS --------------------------------------------------------------------------------------------------------------------------------------*/
+
+main#main section#juegos div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+main#main section#juegos article.juego {
+    width: 50%;
+    margin: 50px 0px;
+}
+
+main#main section#juegos h2 {
+    margin-bottom: 20px;
+}
+
+main#main section#juegos img {
+    width: 200px;
+    margin: auto;
+}
+
+main#main section#juegos img:hover {
+    box-shadow: 0px 0px 100px rgb(150, 90, 57);
+}
+
+/* GALERIA --------------------------------------------------------------------------------------------------------------------------------------*/
+
+main#main section#galeria div {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    gap: 10px;
+    grid-auto-flow: dense;
+}
+
+main#main section#galeria article:nth-child(1) {
+    background: url("../img/galeria1.png") no-repeat center center / cover;
+}
+
+main#main section#galeria article:nth-child(2) {
+    background: url("../img/galeria2.jpg") no-repeat center center / cover;
+}
+
+main#main section#galeria article:nth-child(3) {
+    background: url("../img/galeria3.jpg") no-repeat center center / cover;
+}
+
+main#main section#galeria article:nth-child(4) {
+    background: url("../img/galeria7.jpg") no-repeat center center / cover;
+}
+
+main#main section#galeria article:nth-child(5) {
+    background: url("../img/galeria5.jpg") no-repeat center center / cover;
+}
+
+main#main section#galeria article:nth-child(6) {
+    background: url("../img/galeria6.jpg") no-repeat center center / cover;
+}
+
+main#main section#galeria article:nth-child(7) {
+    background: url("../img/galeria9.jpg") no-repeat center center / cover;
+}
+
+main#main section#galeria article:nth-child(8) {
+    background: url("../img/galeria11.jpg") no-repeat center center / cover;
+}
+
+main#main section#galeria article:nth-child(9) {
+    background: url("../img/galeria8.jpg") no-repeat center center / cover;
+}
+
+main#main section#galeria article:nth-child(10) {
+    background: url("../img/galeria10.jpg") no-repeat center center / cover;
+}
+
+main#main section#galeria article:nth-child(11) {
+    background: url("../img/galeria4.jpg") no-repeat center center / cover;
+}
+
+main#main section#galeria article:nth-child(12) {
+    background: url("../img/galeria12.jpg") no-repeat center center / cover;
+}
+
+main#main section#galeria article.ancho {
+    grid-column: span 2;
+}
+
+main#main section#galeria article.alto {
+    grid-row: span 2;
+}
+
+/* GIANT DAD --------------------------------------------------------------------------------------------------------------------------------------*/
+
+main#main section#giant_dad img {
+    width: 300px;
+}
+
+main#main section#giant_dad table {
+    font-weight: bold;
+    margin: auto;
+    width: 80%;
+    border-collapse: collapse;
+}
+
+main#main section#giant_dad table td {
+    border: solid 1px #FFF;
+    padding: 10px;
+}
+
+main#main section#giant_dad table img {
+    width: 100px;
+    vertical-align: middle;
+}
+
+/* CONTACTO --------------------------------------------------------------------------------------------------------------------------------------*/
+
+form {
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    padding: 20px;
+    box-shadow: 0px 0px 20px 0px rgb(150, 90, 57);
+    background-color: #000;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: auto;
+    grid-template-areas:
+        "item1 item1 item2 item2"
+        "item3 item3 item3 item3"
+        "item4 item4 item5 item5"
+        "item6 item6 item6 item6"
+        ". item7 item7 ."
+        "item8 item8 item8 item8";
+}
+
+form .item1 {
+    grid-area: item1;
+}
+
+form .item2 {
+    grid-area: item2;
+}
+
+form .item3 {
+    grid-area: item3;
+}
+
+form .item4 {
+    grid-area: item4;
+}
+
+form .item5 {
+    grid-area: item5;
+}
+
+form .item6 {
+    grid-area: item6;
+}
+
+form .item7 {
+    grid-area: item7;
+}
+
+form .item8 {
+    grid-area: item8;
+}
+
+form div,
+form fieldset {
+    padding: 20px;
+    margin: 10px 0px;
+}
+
+form fieldset legend {
+    padding: 0px 20px;
+}
+
+form fieldset {
+    display: flex;
+    justify-content: space-evenly;
+    border-color: rgb(150, 90, 57);
+}
+
+form fieldset div {
+    padding: 0px;
+}
+
+form fieldset input,
+form input[type="checkbox"] {
+    width: inherit;
+}
+
+form input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+form select {
+    width: 100%;
+    padding: 5px 10px;
+    background: #000;
+    color: #fff;
+    border-color: rgb(150, 90, 57);
+}
+
+form select {
+    display: block;
+    margin-top: 10px;
+    outline: none;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: none;
+    border-bottom: 1px solid rgb(150, 90, 57);
+    outline: none;
+    color: #FFF;
+}
+
+form button {
+    width: 100%;
+    font-weight: bold;
+    background-color: rgb(150, 90, 57);
+    color: #FFF;
+    border: solid 1px rgb(150, 90, 57);
+    text-transform: uppercase;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+form button:hover {
+    background-color: #000;
+    border: 1px solid rgb(150, 90, 57);
+    cursor: pointer;
+}
+
+/* FOOTER --------------------------------------------------------------------------------------------------------------------------------------*/
+
+footer#footer {
+    width: 100%;
+    min-height: 20vh;
+    background-color: #000;
+    color: #FFF;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+footer#footer div {
+    width: 250px;
+    margin: 40px;
+}
+
+footer#footer h4 {
+    margin-bottom: 20px;
+}
+
+footer#footer i {
+    margin: 10px;
+}
+
+/* MEDIA QUERIES --------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (max-width: 1080px) {
+    form {
+        box-shadow: 0px 0px 20px 0px rgb(150, 90, 57);
+        background-color: #000;
+        border-radius: 15px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "item1"
+            "item2"
+            "item3"
+            "item4"
+            "item5"
+            "item6"
+            "item7"
+            "item8";
+    }
+}
+
+@media (max-width: 768px) {
+
+    html,body {
+        font-size: 16px;
+    }
+
+    main#main section#intro div#texto img {
+        padding: 0px;
+        float: none;
+        display: block;
+        margin: 0px auto 50px;
+    }
+
+    main#main section#juegos article.juego {
+        width: 100%;
+        margin: 50px 0px;
+    }
+
+    main#main section#juegos img {
+        width: 60%;
+    }
+
+    main#main section#galeria article {
+        grid-column: span 2 !important;
+        grid-row: span 2 !important;
+    }
+}
+
+/* PREGUNTAR BORJA MAX WIDTH DE LAS IMAGENES. PORQUE CUANDO LE DOY ZOOM TENGO QUE REGULAR ESO. EN GENERAL, COMO TRABAJAR CON IMAGENES RESPONSIVAS*/
+/* ROBOTO PREDEFINIDA E IMPORTADA */
+/* PROBLEMA PADDING CON FIXED */
+/* PROBLEMA 'L' EN LA FUENTE */
+/* MEDIA QUERIES APARTE? */
+/* TABLA RESPONSIVE? */
+/* ESTRUCTURA DE CARPETAS TAL Y COMO EN LA PRACTICA?? YO TENGO EL CSS Y ASSETS */
+/* EL ZOOM ME PIXELA, PERO CUANDO ES MUCHO */
+/* RESPONSIVE GRID NO BAJA CORREO */
+/* SUSTITUIR PIXELES COMO PADDING Y DEMAS POR UNIDADES RELATIVAS */
+/* EN EL DATE NO SE VE LA FECHA Y QUEDA MEJOR MAS PEQUEÑO */
+/* MIRARME EL FLEX BASIS PARA SUSTITUIRLOS POR WIDTH */
+/* EL HEADER TIENE QUE SER LITERALMENTE EL DEL CODIGO QUE NOS PASO??? */
