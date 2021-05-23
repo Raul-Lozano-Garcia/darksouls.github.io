@@ -68,32 +68,33 @@ a#seleccionado {
 
 /* HEADER --------------------------------------------------------------------------------------------------------------------------------------*/
 
-header#menu {
+header#header {
     width: 100%;
     position: fixed;
     min-height: 10vh;
     background-color: #000;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 20px;
     z-index: 999;
+    padding: 0px 20px;
 }
 
-header#menu nav {
-    font-size: 1.5rem;
-    margin: 0px 20px;
+header#header div#logo img {
+    max-height: 10vh;
+    vertical-align: middle;
 }
 
-header#menu>ul {
-    font-size: 2rem;
-    margin: 0px 20px;
-}
-
-header#menu ul li {
+header#header ul li {
     display: inline-block;
     margin: 10px 20px;
     font-family: "Optimus Princeps";
+}
+
+header#header div.toggle {
+    color: #FFF;
+    font-size: 1.5rem;
+    display: none;
 }
 
 /* MAIN Y SECCION--------------------------------------------------------------------------------------------------------------------------------------*/
@@ -443,16 +444,35 @@ footer#footer {
 }
 
 footer#footer div {
-    width: 250px;
-    margin: 40px;
+    font-size: 0.8rem;
+    text-align: center;
+    width: 25%;
+    margin: 40px 0px;
+}
+
+footer#footer div:nth-child(n+2) {
+    border-left: 1px solid #fff;
 }
 
 footer#footer h4 {
+    font-size: 1rem;
     margin-bottom: 20px;
+}
+
+footer li {
+    padding: 10px;
 }
 
 footer#footer i {
     margin: 10px;
+}
+
+#copy {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    color: #FFF;
+    background-color: rgb(150, 90, 57);
 }
 
 /* MEDIA QUERIES --------------------------------------------------------------------------------------------------------------------------------------*/
@@ -507,9 +527,31 @@ footer#footer i {
         width: 60%;
     }
 
+    main#main section#giant_dad table {
+        width: 100%;
+    }
+
     main#main section#galeria a {
         grid-column: span 3 !important;
         grid-row: span 2 !important;
+    }
+
+    footer#footer {
+        flex-direction: column;
+        justify-content: flex-start;
+        font-size: 1rem;
+    }
+
+    footer#footer div {
+        text-align: center;
+        width: 80%;
+        margin: 0px auto;
+        padding: 30px;
+    }
+
+    footer#footer div:nth-child(n+2) {
+        border-left: 0px;
+        border-top: 1px solid #fff;
     }
 
     /* ESTO SERIA EL RESPONSIVE DE MOVIL, PERO QUEDAR CUADRARLO BIEN */
@@ -523,6 +565,63 @@ footer#footer i {
     } */
 }
 
+@media (max-width: 792px) {
+
+    header#header {
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    header#header #logo {
+        align-self: flex-start;
+    }
+
+    header#header ul li {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 0px;
+    }
+
+    header#header ul li:hover {
+        background-color: rgb(150, 90, 57);
+    }
+
+    header#header div.toggle {
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        top: 18px;
+        right: 20px;
+    }
+
+    header#header div.toggle i.fa-times {
+        display: none;
+    }
+
+    header#header div.toggle i.fa-bars.activo {
+        display: none;
+    }
+
+    header#header div.toggle i.fa-times.activo {
+        display: block;
+    }
+
+    header#header nav a {
+        display: block;
+        padding: 20px;
+    }
+
+    header#header nav {
+        width: 100%;
+        display: none;
+    }
+
+    header#header nav.activo {
+        display: block;
+    }
+}
+
 /* PREGUNTAR BORJA MAX WIDTH DE LAS IMAGENES. PORQUE CUANDO LE DOY ZOOM TENGO QUE REGULAR ESO. EN GENERAL, COMO TRABAJAR CON IMAGENES RESPONSIVAS*/
 /* SUSTITUIR PIXELES COMO PADDING Y DEMAS POR UNIDADES RELATIVAS */
 /* MIRARME EL FLEX BASIS PARA SUSTITUIRLOS POR WIDTH */
@@ -531,9 +630,5 @@ footer#footer i {
 /* CRACK DEL MES----------------------------------------------------------------------------------------------------------------------------------------------- */
 /* TOGGLE PARA EL HEADER */
 /* LOGO DARK SOULS EN EL HEADER, PERO SINO QUEDA BIEN NI EN RESPONSIVE NI EN PANTALLA NORMAL, QUITARLO */
-/* PARA EL FOOTER, PONERLE UNA LINEA QUE SEPARE CADA SECCION A TRAVES DE UN BEFORE. HACERLO IGUAL QUE LA PAGINA DE LA ACADEMIA*/
-/* VER SI EL FOOTER QUITAR LA LISTA, QUE QUEDA FEA, Y HACERLO COMO LA ESCUELA */
 /* DECIR A BORJA QUE LA GALERIA TIENE QUE DECIRME DE QUE TAMAÑO VA A SER LA PANTALLA EN LA QUE SE GRABE EL CRACK DEL MES PARA AJUSTARLA. AHORA MISMO EN LOS PC DE CLASE SE VE BIEN */
-/* HACER LO DE JS PARA LAS IMAGENES DE LA GALERIA A TAMAÑO COMPLETO */
-/* INTENTAR FAVICON PERSONALIZADO */
-/* COPYRIGHT MIO AL FINAL DEL FOOTER DE COLOR MARRON */
+/* INTENTAR FAVICON PERSONALIZADO. EL QUE TENGO DE FAVICON ME PUEDE SERVIR PARA FAVICON Y LOGO ALOMEJOR */

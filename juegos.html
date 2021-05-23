@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Sección de galería de la página de Dark Souls para introducir al mundo de esta saga a futuros jugadores" />
-    <title>Dark Souls FP: Juegos</title>
+    <title>Videojuegos</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -13,28 +13,29 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
-    <header id="menu">    
+    <header id="header">    
+        <div id="logo">
+            <a href="index.html"><img src="assets/img/logo.png" alt="Logo"></a>
+        </div>
+        
         <nav>
-            <ul>               
-                <li><a  href="index.html">Inicio</a></li>
-                <li><a id="seleccionado" href="#">Juegos</a></li>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a id="seleccionado"  href="#">Juegos</a></li>
                 <li><a href="giant_dad.html">Giant Dad</a></li>
                 <li><a href="galeria.html">Galeria</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
-        
-        <ul>               
-            <li><a href="https://twitter.com/?lang=es" target="_blank"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://es-es.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="https://www.twitch.tv/" target="_blank"><i class="fab fa-twitch"></i></a></li>             
-        </ul>     
+        <div class="toggle">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+        </div>
     </header>
     <main id="main">     
         <section id="juegos">
-            <h1>Juegos</h1>
-            <p>Estos son a día de hoy todos los juegos de la saga Souls, comenzando por Demon´s Souls y acabando con Dark Souls 3.</p>
+            <h1>Videojuegos</h1>
+            <p>Estos son a día de hoy todos los videojuegos de la saga Souls, comenzando por Demon´s Souls y acabando con Dark Souls 3.</p>
             <div>
                 <article>
                     <div>
@@ -116,5 +117,6 @@
             </ul>
         </div>
     </footer>
+    <script src="assets/js/app.js"></script>
 </body>
 </html>
