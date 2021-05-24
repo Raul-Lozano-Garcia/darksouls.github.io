@@ -141,7 +141,7 @@ main#main section#intro div#video iframe {
 
 /* JUEGOS --------------------------------------------------------------------------------------------------------------------------------------*/
 
-main#main section#juegos p{
+main#main section#juegos p {
     margin: 0px;
 }
 
@@ -185,7 +185,7 @@ main#main section#juegos article div {
         "i2 i1 i1"
         "i2 i3 i3"
         "i2 i3 i3";
-    grid-gap:20px;
+    grid-gap: 20px;
 }
 
 .i1 {
@@ -200,12 +200,8 @@ main#main section#juegos article div {
     grid-area: i3;
 }
 
-main#main section#juegos article div blockquote{
+main#main section#juegos article div blockquote {
     font-style: italic;
-}
-
-main#main section#juegos article div blockquote span{
-    font-size: 2rem;
 }
 
 main#main section#juegos img {
@@ -213,7 +209,7 @@ main#main section#juegos img {
 }
 
 main#main section#juegos img:hover {
-    box-shadow: 0px 0px 100px rgb(150, 90, 57);
+    box-shadow: 0px 0px 20px rgb(150, 90, 57);
 }
 
 /* GALERIA --------------------------------------------------------------------------------------------------------------------------------------*/
@@ -224,6 +220,12 @@ main#main section#galeria div {
     grid-auto-rows: minmax(200px, auto);
     gap: 10px;
     grid-auto-flow: dense;
+}
+
+main#main section#galeria a:hover {
+    animation: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 
 main#main section#galeria a:nth-child(1) {
@@ -297,7 +299,7 @@ main#main section#giant_dad img {
 }
 
 main#main section#giant_dad table {
-    display:inline-block;
+    display: inline-block;
     font-weight: bold;
     margin: auto;
     border-collapse: collapse;
@@ -440,13 +442,13 @@ form button:hover {
 
 /* FOOTER --------------------------------------------------------------------------------------------------------------------------------------*/
 
-footer#footer{
+footer#footer {
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-footer#footer div.parte1f{
+footer#footer div.parte1f {
     width: 100%;
     background-color: #000;
     color: #FFF;
@@ -456,8 +458,8 @@ footer#footer div.parte1f{
     padding: 40px 0px;
 }
 
-footer#footer div.parte1f div{
-    width: 25%; 
+footer#footer div.parte1f div {
+    width: 25%;
     padding: 30px;
 }
 
@@ -511,7 +513,7 @@ footer#footer i {
         margin: 0px;
     }
 
-    header#header ul li:last-child{
+    header#header ul li:last-child {
         border-bottom: 1px solid #FFF;
     }
 
@@ -574,7 +576,7 @@ footer#footer i {
             "item8";
     }
 
-    main#main section#juegos{
+    main#main section#juegos {
         width: 100%;
     }
 
@@ -582,7 +584,7 @@ footer#footer i {
 
 @media (max-width: 768px) {
 
-    footer#footer div.parte1f{
+    footer#footer div.parte1f {
         flex-direction: column;
         justify-content: flex-start;
         font-size: 1rem;
@@ -601,7 +603,8 @@ footer#footer i {
         border-top: 1px solid #fff;
     }
 
-    html, body {
+    html,
+    body {
         font-size: 16px;
     }
 
@@ -636,12 +639,9 @@ footer#footer i {
             "i1"
             "i2"
             "i3";
-    } 
+    }
 
 }
 
-/* PREGUNTAR BORJA MAX WIDTH DE LAS IMAGENES. PORQUE CUANDO LE DOY ZOOM TENGO QUE REGULAR ESO. EN GENERAL, COMO TRABAJAR CON IMAGENES RESPONSIVAS*/
-/* SUSTITUIR PIXELES COMO PADDING Y DEMAS POR UNIDADES RELATIVAS */
 /* MIRARME EL FLEX BASIS PARA SUSTITUIRLOS POR WIDTH */
-/* REVISAR MEDIDAS ABSOLUTAS Y RELATIVAS. PIXELES PARA UN WIDTH POR EJEMPLO ESTA MAL, pero no ponerlos en min o max width */
 /* BUSCAR EJEMPLOS DE TABLA RESPONSIVE */
