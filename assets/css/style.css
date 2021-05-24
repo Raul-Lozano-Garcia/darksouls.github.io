@@ -200,6 +200,13 @@ main#main section#juegos article div {
     grid-area: i3;
 }
 
+main#main section#juegos article div blockquote{
+    font-style: italic;
+}
+
+main#main section#juegos article div blockquote span{
+    font-size: 2rem;
+}
 
 main#main section#juegos img {
     margin: auto;
@@ -290,9 +297,9 @@ main#main section#giant_dad img {
 }
 
 main#main section#giant_dad table {
+    display:inline-block;
     font-weight: bold;
     margin: auto;
-    width: 80%;
     border-collapse: collapse;
 }
 
@@ -615,6 +622,7 @@ footer#footer i {
 
     main#main section#giant_dad table {
         width: 100%;
+        overflow: scroll
     }
 
     main#main section#galeria a {
@@ -636,6 +644,4 @@ footer#footer i {
 /* SUSTITUIR PIXELES COMO PADDING Y DEMAS POR UNIDADES RELATIVAS */
 /* MIRARME EL FLEX BASIS PARA SUSTITUIRLOS POR WIDTH */
 /* REVISAR MEDIDAS ABSOLUTAS Y RELATIVAS. PIXELES PARA UN WIDTH POR EJEMPLO ESTA MAL, pero no ponerlos en min o max width */
-
-/* CRACK DEL MES----------------------------------------------------------------------------------------------------------------------------------------------- */
-/* DECIR A BORJA QUE LA GALERIA TIENE QUE DECIRME DE QUE TAMAÑO VA A SER LA PANTALLA EN LA QUE SE GRABE EL CRACK DEL MES PARA AJUSTARLA. AHORA MISMO EN LOS PC DE CLASE SE VE BIEN */
+/* BUSCAR EJEMPLOS DE TABLA RESPONSIVE */
