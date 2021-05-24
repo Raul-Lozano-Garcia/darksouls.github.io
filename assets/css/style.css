@@ -202,7 +202,6 @@ main#main section#juegos article div {
 
 
 main#main section#juegos img {
-    width: 200px;
     margin: auto;
 }
 
@@ -487,7 +486,66 @@ footer#footer i {
 
 /* MEDIA QUERIES --------------------------------------------------------------------------------------------------------------------------------------*/
 
-@media (max-width: 992px) {
+@media (max-width: 1080px) {
+    header#header {
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    header#header #logo {
+        align-self: flex-start;
+    }
+
+    header#header ul li {
+        border-top: 1px solid #FFF;
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 0px;
+    }
+
+    header#header ul li:last-child{
+        border-bottom: 1px solid #FFF;
+    }
+
+    header#header ul li:hover {
+        background-color: rgb(150, 90, 57);
+    }
+
+    header#header div.toggle {
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        top: 3.3vh;
+        right: 20px;
+    }
+
+    header#header div.toggle i.fa-times {
+        display: none;
+    }
+
+    header#header div.toggle i.fa-bars.activo {
+        display: none;
+    }
+
+    header#header div.toggle i.fa-times.activo {
+        display: block;
+    }
+
+    header#header nav a {
+        display: block;
+        padding: 20px;
+    }
+
+    header#header nav {
+        width: 100%;
+        display: none;
+    }
+
+    header#header nav.activo {
+        display: block;
+    }
+
     main#main section#intro div#contenedor {
         width: 100%;
     }
@@ -574,70 +632,10 @@ footer#footer i {
 
 }
 
-@media (max-width: 792px) {
-
-    header#header {
-        flex-direction: column;
-        padding: 0px;
-    }
-
-    header#header #logo {
-        align-self: flex-start;
-    }
-
-    header#header ul li {
-        display: block;
-        width: 100%;
-        text-align: center;
-        margin: 0px;
-    }
-
-    header#header ul li:hover {
-        background-color: rgb(150, 90, 57);
-    }
-
-    header#header div.toggle {
-        cursor: pointer;
-        display: block;
-        position: absolute;
-        top: 3.3vh;
-        right: 20px;
-    }
-
-    header#header div.toggle i.fa-times {
-        display: none;
-    }
-
-    header#header div.toggle i.fa-bars.activo {
-        display: none;
-    }
-
-    header#header div.toggle i.fa-times.activo {
-        display: block;
-    }
-
-    header#header nav a {
-        display: block;
-        padding: 20px;
-    }
-
-    header#header nav {
-        width: 100%;
-        display: none;
-    }
-
-    header#header nav.activo {
-        display: block;
-    }
-}
-
 /* PREGUNTAR BORJA MAX WIDTH DE LAS IMAGENES. PORQUE CUANDO LE DOY ZOOM TENGO QUE REGULAR ESO. EN GENERAL, COMO TRABAJAR CON IMAGENES RESPONSIVAS*/
 /* SUSTITUIR PIXELES COMO PADDING Y DEMAS POR UNIDADES RELATIVAS */
 /* MIRARME EL FLEX BASIS PARA SUSTITUIRLOS POR WIDTH */
 /* REVISAR MEDIDAS ABSOLUTAS Y RELATIVAS. PIXELES PARA UN WIDTH POR EJEMPLO ESTA MAL, pero no ponerlos en min o max width */
 
 /* CRACK DEL MES----------------------------------------------------------------------------------------------------------------------------------------------- */
-/* TOGGLE PARA EL HEADER */
-/* LOGO DARK SOULS EN EL HEADER, PERO SINO QUEDA BIEN NI EN RESPONSIVE NI EN PANTALLA NORMAL, QUITARLO */
 /* DECIR A BORJA QUE LA GALERIA TIENE QUE DECIRME DE QUE TAMAÑO VA A SER LA PANTALLA EN LA QUE SE GRABE EL CRACK DEL MES PARA AJUSTARLA. AHORA MISMO EN LOS PC DE CLASE SE VE BIEN */
-/* INTENTAR FAVICON PERSONALIZADO. EL QUE TENGO DE FAVICON ME PUEDE SERVIR PARA FAVICON Y LOGO ALOMEJOR */
