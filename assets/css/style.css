@@ -141,6 +141,10 @@ main#main section#intro div#video iframe {
 
 /* JUEGOS --------------------------------------------------------------------------------------------------------------------------------------*/
 
+main#main section#juegos p{
+    margin: 0px;
+}
+
 main#main section#juegos>div {
     display: flex;
     flex-direction: column;
@@ -178,9 +182,10 @@ main#main section#juegos article div {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-template-rows: auto;
     grid-template-areas:
-        "i2 i1 ."
+        "i2 i1 i1"
         "i2 i3 i3"
         "i2 i3 i3";
+    grid-gap:20px;
 }
 
 .i1 {
@@ -193,10 +198,6 @@ main#main section#juegos article div {
 
 .i3 {
     grid-area: i3;
-}
-
-main#main section#juegos h2 {
-    text-align: left;
 }
 
 
@@ -433,24 +434,33 @@ form button:hover {
 
 /* FOOTER --------------------------------------------------------------------------------------------------------------------------------------*/
 
-footer#footer {
+footer#footer{
     width: 100%;
-    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer#footer div.parte1f{
+    width: 100%;
     background-color: #000;
     color: #FFF;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding: 40px 0px;
+}
+
+footer#footer div.parte1f div{
+    width: 25%; 
+    padding: 30px;
 }
 
 footer#footer div {
     font-size: 0.8rem;
     text-align: center;
-    width: 25%;
-    margin: 40px 0px;
 }
 
-footer#footer div:nth-child(n+2) {
+footer#footer div.parte1f div:nth-child(n+2) {
     border-left: 1px solid #fff;
 }
 
@@ -498,12 +508,35 @@ footer#footer i {
             "item7"
             "item8";
     }
+
+    main#main section#juegos{
+        width: 100%;
+    }
+
 }
 
 @media (max-width: 768px) {
 
-    html,
-    body {
+    footer#footer div.parte1f{
+        flex-direction: column;
+        justify-content: flex-start;
+        font-size: 1rem;
+        padding: 0px;
+    }
+
+    footer#footer div.parte1f div {
+        text-align: center;
+        width: 80%;
+        margin: 0px auto;
+        padding: 30px;
+    }
+
+    footer#footer div.parte1f div:nth-child(n+2) {
+        border-left: 0px;
+        border-top: 1px solid #fff;
+    }
+
+    html, body {
         font-size: 16px;
     }
 
@@ -516,11 +549,6 @@ footer#footer i {
         float: none;
         display: block;
         margin: 0px auto 50px;
-    }
-
-    main#main section#juegos article {
-        width: 100%;
-        margin: 50px 0px;
     }
 
     main#main section#juegos img {
@@ -536,33 +564,14 @@ footer#footer i {
         grid-row: span 2 !important;
     }
 
-    footer#footer {
-        flex-direction: column;
-        justify-content: flex-start;
-        font-size: 1rem;
-    }
-
-    footer#footer div {
-        text-align: center;
-        width: 80%;
-        margin: 0px auto;
-        padding: 30px;
-    }
-
-    footer#footer div:nth-child(n+2) {
-        border-left: 0px;
-        border-top: 1px solid #fff;
-    }
-
-    /* ESTO SERIA EL RESPONSIVE DE MOVIL, PERO QUEDAR CUADRARLO BIEN */
-    /* main#main section#juegos article div {
-        padding: 15px;
+    main#main section#juegos article div {
         grid-template-columns: 1fr;
         grid-template-areas:
             "i1"
             "i2"
             "i3";
-    } */
+    } 
+
 }
 
 @media (max-width: 792px) {
