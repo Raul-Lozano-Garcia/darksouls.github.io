@@ -625,7 +625,7 @@ footer#footer i {
 
     main#main section#giant_dad table {
         width: 100%;
-        overflow: scroll
+        overflow-y: hidden;
     }
 
     main#main section#galeria a {
