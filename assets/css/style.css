@@ -202,6 +202,7 @@ main#main section#juegos article div {
 
 main#main section#juegos article div blockquote {
     font-style: italic;
+    text-align:left;
 }
 
 main#main section#juegos img {
