@@ -13,7 +13,8 @@
     src: url("../fonts/OptimusPrinceps.ttf");
 }
 
-html,body {
+html,
+body {
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
     line-height: 160%;
@@ -24,7 +25,8 @@ a {
     color: white;
 }
 
-a:hover,a#seleccionado {
+a:hover,
+a#seleccionado {
     text-shadow: -2px -2px 3px rgb(150, 90, 57), 2px -2px 3px rgb(150, 90, 57), -2px 2px 3px rgb(150, 90, 57), 2px 2px 3px rgb(150, 90, 57);
 }
 
@@ -58,7 +60,9 @@ p {
     margin-bottom: 30px;
 }
 
-textarea,input,select {
+textarea,
+input,
+select {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -67,7 +71,6 @@ textarea,input,select {
 header#header {
     width: 100%;
     position: fixed;
-    /* min-height: 10vh; */
     background-color: #000;
     display: flex;
     justify-content: space-between;
@@ -77,7 +80,7 @@ header#header {
 }
 
 header#header img {
-    max-height: 10vh; 
+    max-height: 10vh;
     vertical-align: middle;
 }
 
@@ -97,7 +100,6 @@ header#header div#toggle {
 
 main#main {
     padding-top: 10vh;
-    /* width: 100%; */
     background: url("../img/fondo.gif") no-repeat fixed center center/cover;
 }
 
@@ -143,12 +145,10 @@ main#main section#juegos p {
 main#main section#juegos>div {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
 }
 
 main#main section#juegos article {
-    /* width: 80%; */
     margin: 50px 0px;
 }
 
@@ -205,7 +205,6 @@ main#main section#juegos img {
 
 main#main section#juegos img:hover {
     box-shadow: 0px 0px 20px rgb(150, 90, 57);
-
 }
 
 /* GALERIA --------------------------------------------------------------------------------------------------------------------------------------*/
@@ -218,8 +217,8 @@ main#main section#galeria div {
     grid-auto-flow: dense;
 }
 
-main#main section#galeria a{
-    transition:all .5s;
+main#main section#galeria a {
+    transition: all .5s;
 }
 
 main#main section#galeria a:hover {
@@ -292,15 +291,14 @@ main#main section#galeria a.alto {
 
 /* GIANT DAD --------------------------------------------------------------------------------------------------------------------------------------*/
 
-main#main section#giant_dad img {
-    width: 300px;
-    /* CAMBIAR PIXELES ...........,,,,,,,,,,,,,,,,,,,,,,,,,............................,,,,,,,,,,,,,,,,,,,,,,,,,,,,,.........................,,,,,,,,,,*/
+main#main section#giant_dad>img {
+    width: 40vw;
+    max-width: 300px;
+    min-width: 220px;
 }
 
 main#main section#giant_dad table {
-    display: inline-block;
     font-weight: bold;
-    margin: auto;
     border-collapse: collapse;
 }
 
@@ -310,14 +308,12 @@ main#main section#giant_dad td {
 }
 
 main#main section#giant_dad table img {
-    width: 100px;
-    /* CAMBIAR PIXELES ...........,,,,,,,,,,,,,,,,,,,,,,,,,............................,,,,,,,,,,,,,,,,,,,,,,,,,,,,,.........................,,,,,,,,,,*/
     vertical-align: middle;
 }
 
 /* CONTACTO --------------------------------------------------------------------------------------------------------------------------------------*/
 
-form {
+main#main section#contacto form {
     width: 80%;
     margin: auto;
     text-align: left;
@@ -337,85 +333,81 @@ form {
         "item8 item8 item8 item8";
 }
 
-form .item1 {
+main#main section#contacto form .item1 {
     grid-area: item1;
 }
 
-form .item2 {
+main#main section#contacto form .item2 {
     grid-area: item2;
 }
 
-form .item3 {
+main#main section#contacto form .item3 {
     grid-area: item3;
 }
 
-form .item4 {
+main#main section#contacto form .item4 {
     grid-area: item4;
 }
 
-form .item5 {
+main#main section#contacto form .item5 {
     grid-area: item5;
 }
 
-form .item6 {
+main#main section#contacto form .item6 {
     grid-area: item6;
 }
 
-form .item7 {
+main#main section#contacto form .item7 {
     grid-area: item7;
 }
 
-form .item8 {
+main#main section#contacto form .item8 {
     grid-area: item8;
 }
 
-form div,
-form fieldset {
+main#main section#contacto form div,
+main#main section#contacto form fieldset {
     padding: 20px;
     margin: 10px 0px;
 }
 
-form fieldset legend {
-    padding: 0px 20px;
-}
-
-form fieldset {
+main#main section#contacto form fieldset {
     display: flex;
     justify-content: space-evenly;
     border-color: rgb(150, 90, 57);
 }
 
-form fieldset div {
+main#main section#contacto form legend {
+    padding: 0px 20px;
+}
+
+main#main section#contacto form fieldset div {
     padding: 0px;
 }
 
-form fieldset input,
-form input[type="checkbox"] {
+main#main section#contacto form fieldset input,
+main#main section#contacto form input[type="checkbox"] {
     width: inherit;
 }
 
-form input[type="date"]::-webkit-calendar-picker-indicator {
+main#main section#contacto form input[type="date"]::-webkit-calendar-picker-indicator {
     filter: invert(1);
 }
 
-form select {
+main#main section#contacto form select {
     width: 100%;
     padding: 5px 10px;
     background: #000;
     color: #fff;
     border-color: rgb(150, 90, 57);
-}
-
-form select {
-    display: block;
     margin-top: 10px;
     outline: none;
 }
 
-form input,
-form textarea {
+main#main section#contacto form input,
+main#main section#contacto form textarea {
     width: 100%;
-    padding: 10px;
+    margin-top: 10px;
     border: none;
     background: none;
     border-bottom: 1px solid rgb(150, 90, 57);
@@ -423,7 +415,7 @@ form textarea {
     color: #FFF;
 }
 
-form button {
+main#main section#contacto form button {
     width: 100%;
     font-weight: bold;
     background-color: rgb(150, 90, 57);
@@ -434,7 +426,7 @@ form button {
     border-radius: 15px;
 }
 
-form button:hover {
+main#main section#contacto form button:hover {
     background-color: #000;
     border: 1px solid rgb(150, 90, 57);
     cursor: pointer;
@@ -442,18 +434,10 @@ form button:hover {
 
 /* FOOTER --------------------------------------------------------------------------------------------------------------------------------------*/
 
-footer#footer {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
 footer#footer div#parte1f {
-    width: 100%;
     background-color: #000;
     color: #FFF;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     padding: 40px 0px;
 }
@@ -486,7 +470,6 @@ footer#footer i {
 }
 
 footer#footer div#parte2f {
-    width: 100%;
     padding: 20px;
     text-align: center;
     color: #FFF;
@@ -496,16 +479,17 @@ footer#footer div#parte2f {
 /* MEDIA QUERIES --------------------------------------------------------------------------------------------------------------------------------------*/
 
 @media (max-width: 1080px) {
+
     header#header {
         flex-direction: column;
         padding: 0px;
     }
 
-    header#header #logo {
+    header#header div#logo {
         align-self: flex-start;
     }
 
-    header#header ul li {
+    header#header li {
         border-top: 1px solid #FFF;
         display: block;
         width: 100%;
@@ -513,11 +497,11 @@ footer#footer div#parte2f {
         margin: 0px;
     }
 
-    header#header ul li:last-child {
+    header#header li:last-child {
         border-bottom: 1px solid #FFF;
     }
 
-    header#header ul li:hover {
+    header#header li:hover {
         background-color: rgb(150, 90, 57);
     }
 
@@ -529,21 +513,16 @@ footer#footer div#parte2f {
         right: 20px;
     }
 
-    header#header div#toggle i.fa-times {
+    header#header i.fa-times {
         display: none;
     }
 
-    header#header div#toggle i.fa-bars.activo {
+    header#header i.fa-bars.activo {
         display: none;
     }
 
-    header#header div#toggle i.fa-times.activo {
+    header#header i.fa-times.activo {
         display: block;
-    }
-
-    header#header nav a {
-        display: block;
-        padding: 20px;
     }
 
     header#header nav {
@@ -555,15 +534,21 @@ footer#footer div#parte2f {
         display: block;
     }
 
+    header#header nav a {
+        display: block;
+        padding: 20px;
+    }
+
     main#main section#intro div#contenedor {
         width: 100%;
     }
 
-    form {
+    main#main section#juegos {
         width: 100%;
-        box-shadow: 0px 0px 20px 0px rgb(150, 90, 57);
-        background-color: #000;
-        border-radius: 15px;
+    }
+
+    main#main section#contacto form {
+        width: 100%;
         grid-template-columns: 1fr;
         grid-template-areas:
             "item1"
@@ -576,32 +561,9 @@ footer#footer div#parte2f {
             "item8";
     }
 
-    main#main section#juegos {
-        width: 100%;
-    }
-
 }
 
 @media (max-width: 768px) {
-
-    footer#footer div#parte1f {
-        flex-direction: column;
-        justify-content: flex-start;
-        font-size: 1rem;
-        padding: 0px;
-    }
-
-    footer#footer div#parte1f div {
-        text-align: center;
-        width: 80%;
-        margin: 0px auto;
-        padding: 30px;
-    }
-
-    footer#footer div#parte1f div:nth-child(n+2) {
-        border-left: 0px;
-        border-top: 1px solid #fff;
-    }
 
     html,
     body {
@@ -613,27 +575,6 @@ footer#footer div#parte2f {
         padding: 20px;
     }
 
-    main#main section#intro div#texto img {
-        padding: 0px;
-        float: none;
-        display: block;
-        margin: 0px auto 50px;
-    }
-
-    main#main section#juegos img {
-        /* width: 60%; */
-    }
-
-    main#main section#giant_dad table {
-        width: 100%;
-        overflow-y: hidden;
-    }
-
-    main#main section#galeria a {
-        grid-column: span 3 !important;
-        grid-row: span 2 !important;
-    }
-
     main#main section#juegos article div {
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -642,8 +583,40 @@ footer#footer div#parte2f {
             "i3";
     }
 
+    main#main section#juegos img {
+        width: 30vw;
+        min-width: 200px;
+    }
+
+    main#main section#juegos img {
+        transition: none;
+    }
+
+    main#main section#juegos img:hover {
+        box-shadow: none;
+    }
+
+    main#main section#galeria a {
+        grid-column: span 3 !important;
+        grid-row: span 2 !important;
+    }
+
     main#main section#galeria a:hover {
         transform: none;
     }
 
+    footer#footer div#parte1f {
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    footer#footer div#parte1f div {
+        width: 80%;
+        margin: 0px auto;
+    }
+
+    footer#footer div#parte1f div:nth-child(n+2) {
+        border-left: 0px;
+        border-top: 1px solid #fff;
+    }
 }

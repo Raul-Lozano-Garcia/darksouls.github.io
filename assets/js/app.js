@@ -10,4 +10,6 @@ window.addEventListener("load", () => {
     times.classList.toggle('activo');
     menu.classList.toggle('activo');
   })
+
+  $('table').stacktable();
 });
