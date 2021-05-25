@@ -76,18 +76,18 @@ header#header {
     padding: 0px 20px;
 }
 
-header#header div#logo img {
+header#header img {
     max-height: 10vh; 
     vertical-align: middle;
 }
 
-header#header ul li {
+header#header li {
     display: inline-block;
     margin: 10px 20px;
     font-family: "Optimus Princeps";
 }
 
-header#header div.toggle {
+header#header div#toggle {
     color: #FFF;
     font-size: 1.5rem;
     display: none;
@@ -97,9 +97,8 @@ header#header div.toggle {
 
 main#main {
     padding-top: 10vh;
-    width: 100%;
-    background: url("../img/fondo.gif") no-repeat center center/cover;
-    background-attachment: fixed;
+    /* width: 100%; */
+    background: url("../img/fondo.gif") no-repeat fixed center center/cover;
 }
 
 main#main>section {
@@ -129,7 +128,7 @@ main#main section#intro div#video {
     position: relative;
 }
 
-main#main section#intro div#video iframe {
+main#main section#intro iframe {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -144,10 +143,9 @@ main#main section#juegos p {
 main#main section#juegos>div {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
 }
-
 
 main#main section#juegos article {
     width: 80%;
@@ -170,8 +168,8 @@ main#main section#juegos article:nth-child(4) {
     background: url("../img/gif4.gif") no-repeat center center/cover;
 }
 
-main#main section#juegos article div {
-    text-align: justify;
+main#main section#juegos article>div {
+    text-align: left;
     padding: 30px;
     background-color: rgba(0, 0, 0, 0.9);
     display: grid;
@@ -196,9 +194,8 @@ main#main section#juegos article div {
     grid-area: i3;
 }
 
-main#main section#juegos article div blockquote {
+main#main section#juegos blockquote {
     font-style: italic;
-    text-align:left;
 }
 
 main#main section#juegos img {
@@ -297,6 +294,7 @@ main#main section#galeria a.alto {
 
 main#main section#giant_dad img {
     width: 300px;
+    /* CAMBIAR PIXELES ...........,,,,,,,,,,,,,,,,,,,,,,,,,............................,,,,,,,,,,,,,,,,,,,,,,,,,,,,,.........................,,,,,,,,,,*/
 }
 
 main#main section#giant_dad table {
@@ -306,13 +304,14 @@ main#main section#giant_dad table {
     border-collapse: collapse;
 }
 
-main#main section#giant_dad table td {
+main#main section#giant_dad td {
     border: solid 1px #FFF;
     padding: 10px;
 }
 
 main#main section#giant_dad table img {
     width: 100px;
+    /* CAMBIAR PIXELES ...........,,,,,,,,,,,,,,,,,,,,,,,,,............................,,,,,,,,,,,,,,,,,,,,,,,,,,,,,.........................,,,,,,,,,,*/
     vertical-align: middle;
 }
 
@@ -522,7 +521,7 @@ footer#footer div#parte2f {
         background-color: rgb(150, 90, 57);
     }
 
-    header#header div.toggle {
+    header#header div#toggle {
         cursor: pointer;
         display: block;
         position: absolute;
@@ -530,15 +529,15 @@ footer#footer div#parte2f {
         right: 20px;
     }
 
-    header#header div.toggle i.fa-times {
+    header#header div#toggle i.fa-times {
         display: none;
     }
 
-    header#header div.toggle i.fa-bars.activo {
+    header#header div#toggle i.fa-bars.activo {
         display: none;
     }
 
-    header#header div.toggle i.fa-times.activo {
+    header#header div#toggle i.fa-times.activo {
         display: block;
     }
 

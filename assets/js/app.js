@@ -1,5 +1,5 @@
 window.addEventListener("load", () => { 
-  let hamburger = document.querySelector('.toggle');
+  let hamburger = document.querySelector('#toggle');
   let bars = document.querySelector('.fa-bars');
   let times = document.querySelector('.fa-times');
   let menu = document.querySelector('nav');
