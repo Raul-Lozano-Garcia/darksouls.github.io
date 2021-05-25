@@ -13,8 +13,7 @@
     src: url("../fonts/OptimusPrinceps.ttf");
 }
 
-html,
-body {
+html,body {
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
     line-height: 160%;
@@ -23,6 +22,10 @@ body {
 a {
     text-decoration: none;
     color: white;
+}
+
+a:hover,a#seleccionado {
+    text-shadow: -2px -2px 3px rgb(150, 90, 57), 2px -2px 3px rgb(150, 90, 57), -2px 2px 3px rgb(150, 90, 57), 2px 2px 3px rgb(150, 90, 57);
 }
 
 li {
@@ -55,15 +58,8 @@ p {
     margin-bottom: 30px;
 }
 
-textarea,
-input,
-select {
+textarea,input,select {
     font-family: 'Roboto', sans-serif;
-}
-
-a:hover,
-a#seleccionado {
-    text-shadow: -2px -2px 3px rgb(150, 90, 57), 2px -2px 3px rgb(150, 90, 57), -2px 2px 3px rgb(150, 90, 57), 2px 2px 3px rgb(150, 90, 57);
 }
 
 /* HEADER --------------------------------------------------------------------------------------------------------------------------------------*/
@@ -71,7 +67,7 @@ a#seleccionado {
 header#header {
     width: 100%;
     position: fixed;
-    min-height: 10vh;
+    /* min-height: 10vh; */
     background-color: #000;
     display: flex;
     justify-content: space-between;
@@ -81,7 +77,7 @@ header#header {
 }
 
 header#header div#logo img {
-    max-height: 10vh;
+    max-height: 10vh; 
     vertical-align: middle;
 }
 
@@ -225,10 +221,12 @@ main#main section#galeria div {
     grid-auto-flow: dense;
 }
 
+main#main section#galeria a{
+    transition:all .5s;
+}
+
 main#main section#galeria a:hover {
-    animation: pulse;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
+    transform: scale(1.2);
 }
 
 main#main section#galeria a:nth-child(1) {
@@ -451,7 +449,7 @@ footer#footer {
     flex-direction: column;
 }
 
-footer#footer div.parte1f {
+footer#footer div#parte1f {
     width: 100%;
     background-color: #000;
     color: #FFF;
@@ -461,7 +459,7 @@ footer#footer div.parte1f {
     padding: 40px 0px;
 }
 
-footer#footer div.parte1f div {
+footer#footer div#parte1f div {
     width: 25%;
     padding: 30px;
 }
@@ -471,7 +469,7 @@ footer#footer div {
     text-align: center;
 }
 
-footer#footer div.parte1f div:nth-child(n+2) {
+footer#footer div#parte1f div:nth-child(n+2) {
     border-left: 1px solid #fff;
 }
 
@@ -488,7 +486,7 @@ footer#footer i {
     margin: 10px;
 }
 
-#copy {
+footer#footer div#parte2f {
     width: 100%;
     padding: 20px;
     text-align: center;
@@ -587,21 +585,21 @@ footer#footer i {
 
 @media (max-width: 768px) {
 
-    footer#footer div.parte1f {
+    footer#footer div#parte1f {
         flex-direction: column;
         justify-content: flex-start;
         font-size: 1rem;
         padding: 0px;
     }
 
-    footer#footer div.parte1f div {
+    footer#footer div#parte1f div {
         text-align: center;
         width: 80%;
         margin: 0px auto;
         padding: 30px;
     }
 
-    footer#footer div.parte1f div:nth-child(n+2) {
+    footer#footer div#parte1f div:nth-child(n+2) {
         border-left: 0px;
         border-top: 1px solid #fff;
     }
@@ -642,6 +640,10 @@ footer#footer i {
             "i1"
             "i2"
             "i3";
+    }
+
+    main#main section#galeria a:hover {
+        transform: none;
     }
 
 }
