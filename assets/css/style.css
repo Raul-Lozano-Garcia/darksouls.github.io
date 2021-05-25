@@ -148,7 +148,7 @@ main#main section#juegos>div {
 }
 
 main#main section#juegos article {
-    width: 80%;
+    /* width: 80%; */
     margin: 50px 0px;
 }
 
@@ -169,7 +169,7 @@ main#main section#juegos article:nth-child(4) {
 }
 
 main#main section#juegos article>div {
-    text-align: left;
+    text-align: justify;
     padding: 30px;
     background-color: rgba(0, 0, 0, 0.9);
     display: grid;
@@ -610,6 +610,7 @@ footer#footer div#parte2f {
 
     main#main>section {
         width: 100%;
+        padding: 20px;
     }
 
     main#main section#intro div#texto img {
@@ -620,7 +621,7 @@ footer#footer div#parte2f {
     }
 
     main#main section#juegos img {
-        width: 60%;
+        /* width: 60%; */
     }
 
     main#main section#giant_dad table {
